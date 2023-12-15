@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1>输出查看控制台</h1>
+  <script type="module">
+    import JSONX from "./jsonx.js"
+    let json_str = '{"num": 1234567890123456789}'
+    let jsonx = new JSONX(json_str)
+    let obj = jsonx.parse()
+    console.log(obj)
+  </script>
+</body>
+
+</html>
